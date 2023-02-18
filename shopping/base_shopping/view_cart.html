@@ -1,0 +1,45 @@
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Quantity</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <script>
+      // Get the updated cart from local storage
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+      // Calculate the total price
+      let total = 0;
+      cart.forEach(item => {
+        total += item.price * item.quantity;
+      });
+
+      // Display the cart items
+      cart.forEach(item => {
+        document.write(
+          `<tr>
+            <td><img src="${item.image}" alt="${item.name}" width="50"></td>
+            <td>${item.name}</td>
+            <td>${item.description}</td>
+            <td>${item.price}</td>
+            <td>${item.quantity}</td>
+            <td>${item.price * item.quantity}</td>
+          </tr>`
+        );
+      });
+
+      document.write(
+        `<tr>
+          <td colspan="5">Total</td>
+          <td>${total}</td>
+        </tr>`
+      );
+    </script>
+  </tbody>
+</table>

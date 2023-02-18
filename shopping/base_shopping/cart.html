@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+
+{% load static %}
+{% block product %}
+
+  </head>
+<!-- The above code is linking the cart.css files to the cart.html file. -->
+ <link href="{% static 'assets/css/cart.css'%}" rel="stylesheet">
+
+ <div>
+      <body>
+    <table>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+  </tr>
+ <table>
+ </div>
+
+
+
+
+  <!-- The above code is linking the cart.js files to the cart.html file. -->
+<script src="{% static 'assets/js/cart.js' %}"></script>
+
+
+        {% endblock %}
+

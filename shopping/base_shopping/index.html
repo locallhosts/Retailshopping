@@ -1,0 +1,506 @@
+{% extends 'header.html' %}
+
+{% block product %}
+
+{% load static %}
+
+<!-- Main -->
+      <main>
+        <!-- Home Slider -->
+        <div class="swiper swiper-container" data-swiper-options='{
+                  "slidesPerView": 1,
+                  "spaceBetween": 0,
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "clickable": true
+                  },
+                  "navigation": {
+                    "nextEl": ".swiper-next-01",
+                    "prevEl": ".swiper-prev-01"
+                  },
+                  "autoplay": {
+                    "delay": 5000,
+                    "disableOnInteraction": false
+                  }
+                }'>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="bg-no-repeat bg-cover bg-right-center px-8"
+                   style="background-image: url({% static '../media/uploads/products/img4.jpeg' %});">
+                <div class="container">
+                  <div class="row min-vh-85 align-items-center py-12">
+                    <div class="col-lg-6 py-8 pe-xl-10">
+                      <h6 class="fw-500 text-white mb-4">You're Looking Good</h6>
+                      <h1 class="display-4 fw-600 text-white">The best Quality product Ever</h1>
+                      <div class="pt-4">
+                        <a class="btn btn-outline-white" href="#">Discover More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="bg-no-repeat bg-cover bg-right-center px-8"
+                   style="background-image: url({% static '../media/uploads/products/img.jpg' %});">
+                <div class="container">
+                  <div class="row min-vh-85 align-items-center py-12">
+                    <div class="col-lg-6 py-8 pe-xl-10">
+                      <h6 class="fw-500 text-white mb-4">You're Looking Good</h6>
+                      <h1 class="display-4 fw-600 text-white">Final Clearance Up to 80% Off</h1>
+                      <div class="pt-4">
+                        <a class="btn btn-outline-white" href="#">Discover More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-arrow-style-01 swiper-next swiper-next-01">
+            <i class="bi bi-chevron-right"></i>
+          </div>
+          <div class="swiper-arrow-style-01 swiper-prev swiper-prev-01">
+            <i class="bi bi-chevron-left"></i>
+          </div>
+          <div class="swiper-pagination swiper-pagination-white"></div>
+        </div>
+        <!-- End Home Slider -->
+        <!-- Section -->
+        <section class="section pt-0 z-index-1 position-relative">
+          <div class="container">
+            <div class="bg-white rounded mt-n10 p-3 position-relative shadow">
+              <div class="row g-3">
+                <div class="col-lg-4">
+                  <div class="min-h-250px bg-center bg-cover rounded d-flex flex-column align-items-center justify-content-center"
+                       style="background-image: url({% static '../media/uploads/products/img5.jpeg' %});">
+                    <div class="w-100 text-center">
+                      <h6 class="text-uppercase fw-300 text-white mb-2">NEW IN</h6>
+                      <h3 class="fw-400 h3 text-white">Africa SHooping <br> Polo shirt</h3>
+                      <div class="pt-2">
+                        <a class="btn btn-white btn-sm" href="#">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="min-h-250px bg-center bg-cover rounded d-flex flex-column align-items-center justify-content-center"
+                       style="background-image: url({% static '../media/uploads/products/img7.jpg' %});">
+                    <div class="w-100 text-center">
+                      <h6 class="text-uppercase fw-300 text-white mb-2">NEW IN</h6>
+                      <h3 class="fw-400 h3 text-white">Trench coat <br>Afri `Store </h3>
+                      <div class="pt-2">
+                        <a class="btn btn-white btn-sm" href="#">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="min-h-250px bg-center bg-cover rounded d-flex flex-column align-items-center justify-content-center"
+                       style="background-image: url({% static '../media/uploads/products/menss.jpeg' %});">
+                    <div class="w-100 text-center">
+                      <h6 class="text-uppercase fw-300 text-white mb-2">NEW IN</h6>
+                      <h3 class="fw-400 h3 text-white">Afri Store <br>Waistcoat </h3>
+                      <div class="pt-2">
+                        <a class="btn btn-white btn-sm" href="#">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Section -->
+        <!-- Product section -->
+        <section class="section pt-0">
+          <div class="container">
+            <div class="section-heading section-heading-01">
+              <div class="row align-items-center">
+                <div class="col-auto col-md-6">
+                  <h3 class="h4 mb-0">Hot Trending Products</h3>
+                </div>
+                <div class="col-auto col-md-6 text-end">
+                  <a href="#">View All <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-hover-arrow position-relative">
+              <div class="swiper swiper-container" data-swiper-options='{
+                              "slidesPerView": 2,
+                              "spaceBetween": 24,
+                              "loop": true,
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "clickable": true
+                                },
+                              "navigation": {
+                                "nextEl": ".swiper-next-02",
+                                "prevEl": ".swiper-prev-02"
+                              },
+                              "autoplay": {
+                                "delay": 3500,
+                                "disableOnInteraction": false
+                              },
+                              "breakpoints": {
+                                "600": {
+                                  "slidesPerView": 3
+                                },
+                                "991": {
+                                  "slidesPerView": 4
+                                },
+                                "1200": {
+                                  "slidesPerView": 6
+                                }
+                              }
+                        }'>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/img7.jpg' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">Hawaiian shirt</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R569.12<small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R413.12 <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/img9.jpg' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">Sleeve Cultural</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R541. 3<small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R452.2 <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/img3.jpg' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">New peg Fashion</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R563.12<small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R1132.5 <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/img2.jpg' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">cold sweater</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R543.5 <small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R543.93 <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/img.jpg' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">Fine-knit sweater</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R545.54 <small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R56. <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/IMG_0086.JPG' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">Jacket</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R881.62 <small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R781.12 <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-card-8">
+                      <div class="product-card-image">
+                        <div class="badge-ribbon">
+                          <span class="badge bg-danger">Sale</span>
+                        </div>
+                        <div class="product-action">
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-heart"></i>
+                          </a>
+                          <a href="#" class="btn btn-outline-primary">
+                            <i class="fi-repeat"></i>
+                          </a>
+                          <a data-bs-toggle="modal" data-bs-target="#px-quick-view" href="javascript:void(0)" class="btn btn-outline-primary">
+                            <i class="fi-eye"></i>
+                          </a>
+                        </div>
+                        <div class="product-media">
+                          <a href="#">
+                            <img class="img-fluid" src="{% static '../media/uploads/products/img5.jpeg' %}" title="" alt="">
+                          </a>
+                        </div>
+                      </div>
+                      <div class="product-card-info">
+                        <div class="rating-star text">
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star-fill active"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <h6 class="product-title">
+                          <a href="#">Vest</a>
+                        </h6>
+                        <div class="product-price">
+                          <span class="text-primary">R688.62 <small>50</small>
+                          </span>
+                          <del class="fs-sm text-muted">R1081.02 <small>50</small>
+                          </del>
+                        </div>
+                        <div class="product-cart-btn">
+                          <a href="#" class="btn btn-primary btn-sm w-100">
+                            <i class="fi-shopping-cart"></i> Add to cart </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination mt-4 d-lg-none position-relative"></div>
+              </div>
+              <div class="swiper-arrow-style-02 swiper-next swiper-next-02">
+                <i class="bi bi-chevron-right"></i>
+              </div>
+              <div class="swiper-arrow-style-02 swiper-prev swiper-prev-02">
+                <i class="bi bi-chevron-left"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Section -->
+      </main>
+      <!-- End Main -->
+
+
+{% endblock%}
