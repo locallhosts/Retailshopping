@@ -1,0 +1,56 @@
+# Ignore virtual environment files
+venv/
+env/
+.venv/
+.venv3/
+virtual/
+venv2/
+env2/
+venv3/
+env3/
+__pycache__/
+*.pyc
+
+# Ignore secrets and sensitive files
+.env
+*.pyc
+*.pyo
+*.flaskenv
+*.env
+
+# Ignore build artifacts
+*.egg-info/
+dist/
+build/
+*.egg
+*.egg-info
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.sage.py
+*.sage.py~
+*.sage.pkl
+*.sage.pkl.bz2
+*.sage_notebook.sagenb
+*.sage_notebook.sagenb~
+*.sage_notebook.sage.py
+*.sage_notebook.sage.py~
+*.log
+
+# Ignore Django-specific files
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+media
+/static
+
+# Ignore pipenv files
+Pipfile.lock
+Pipfile
+
+# Ignore pytest cache
+.pytest_cache/
