@@ -13,9 +13,17 @@ class Category(models.Model):
 
     @staticmethod
     def get_all_categories():
+        """
+        It returns all the categories in the database
+        :return: All the categories in the database.
+        """
         return Category.objects.all()
 
     def title_choices(self):
+        """
+        It returns a list of tuples, where each tuple is a pair of strings
+        :return: A list of tuples.
+        """
         return [(self.title_1, self.title_1), (self.title_2, self.title_2), (self.title_3, self.title_3),
                 (self.title_4, self.title_4)]
 

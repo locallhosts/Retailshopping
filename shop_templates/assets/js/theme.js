@@ -6,6 +6,7 @@
 
 */
 
+/* The above code is using the bootstrap.js library to create tooltips and popovers. */
 "use strict";
 const d = document;
 d.addEventListener("DOMContentLoaded", function(event) {

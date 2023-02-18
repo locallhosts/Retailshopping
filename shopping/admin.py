@@ -10,6 +10,7 @@ from django.contrib import admin
 
 
 # Register your models here.
+# Registering the models with the admin site.
 admin.site.register(CustomerUser)
 admin.site.register(Category)
 admin.site.register(ProductTitle)

@@ -4,7 +4,11 @@ from .product import Product
 import datetime
 
 
-# The Order_num class is a model that has a one-to-many relationship with the Product and Customer classes
+#
+"""
+The Order_num class is a model that has a one-to-many relationship with the Product and Customer classes
+
+"""
 class Order_num(models.Model):
     product = models.ForeignKey(Product,
                                 on_delete=models.CASCADE)
@@ -18,6 +22,9 @@ class Order_num(models.Model):
     status = models.BooleanField(default=False)
 
     def placeOrder(self):
+        """
+        It returns all the orders of a customer, ordered by date
+        """
         self.save()
 
     @staticmethod

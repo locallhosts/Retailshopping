@@ -32,6 +32,7 @@ AUTH_USER_MODEL = 'shopping.CustomerUser'
 
 # Application definition
 
+# A list of all the apps that are installed in the project.
 INSTALLED_APPS = [
     'shopping',
     'django.contrib.admin',
@@ -54,6 +55,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'AfriShopping.urls'
 
+# A list of dictionaries.
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',

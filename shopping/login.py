@@ -18,6 +18,16 @@ from shopping.signup import CustomerUser
 
 @csrf_protect
 def login_view(request):
+    """
+    If the request method is POST, then get the email and password from the request, check if they are empty, if they are
+    empty, return an error message, if they are not empty, try to get the user from the database, if the user does not
+    exist, return an error message, if the user does exist, check if the password is correct, if the password is correct,
+    check if the user is staff, if the user is staff, return the login page, if the user is not staff, log the user in and
+    redirect them to the dashboard
+
+    :param request: The request is an HttpRequest object
+    :return: The login view is being returned.
+    """
     if request.method == 'POST':
         email = request.POST.get('email')
         password = request.POST.get('password')

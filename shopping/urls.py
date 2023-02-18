@@ -10,8 +10,10 @@ from .signup_view import signup
 
 app_name = 'shopping'
 
+"""
+A list of url patterns.
+"""
 
-# A list of url patterns.
 urlpatterns = [
                   path('', views.index, name="index"),
 

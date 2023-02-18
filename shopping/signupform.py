@@ -6,6 +6,10 @@ from shopping.signup import CustomerUser
 
 # form validation form signup
 
+"""
+It's a form that inherits from UserCreationForm, and adds the fields that I want to be required
+"""
+
 class CustomUserCreationForm(UserCreationForm):
     name = forms.CharField(max_length=50, required=True)
     email = forms.EmailField(required=True)
@@ -21,6 +25,10 @@ class CustomUserCreationForm(UserCreationForm):
         fields = ('email', 'name', 'first_name', 'last_name', 'phone', 'country', 'city', 'address')
 
     def clean(self):
+        """
+        If the email already exists in the database, raise a validation error. If the passwords don't match, raise a
+        validation error
+        """
         cleaned_data = super().clean()
         email = cleaned_data.get('email')
         password1 = cleaned_data.get('password1')
@@ -33,6 +41,14 @@ class CustomUserCreationForm(UserCreationForm):
             raise forms.ValidationError("Passwords do not match.")
 
     def save(self, commit=True):
+        """
+        The function takes in the form data, creates a user object, sets the username, email, password, and other fields,
+        and then saves the user object
+
+        :param commit: If True, then the changes to the object are saved to the database. If False, then the changes are
+        made in memory but not persisted to the database, defaults to True (optional)
+        :return: The user object
+        """
         user = super().save(commit=False)
         user.username = self.cleaned_data['email']  # set username as the email
         user.name = self.cleaned_data['name']

@@ -3,6 +3,7 @@ from django.db import models
 
 
 # It's a subclass of AbstractUser that adds the fields name, email, phone, country, city, and address
+# It's a subclass of AbstractUser that adds the fields name, email, phone, country, city, and address
 class CustomerUser(AbstractUser):
     name = models.CharField(max_length=50)
     email = models.EmailField(unique=True)

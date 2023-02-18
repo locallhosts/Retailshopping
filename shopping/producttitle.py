@@ -2,8 +2,11 @@ from django.db import models
 
 from shopping.category import Category
 
+"""
+I want to create a dropdown menu that contains all the titles from the Category class
+"""
 
-# I want to create a dropdown menu that contains all the titles from the Category class
+
 class ProductTitle(models.Model):
     name = models.CharField(max_length=50)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)

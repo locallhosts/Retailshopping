@@ -5,6 +5,10 @@ import sys
 
 
 def main():
+    """
+    It sets the environment variable DJANGO_SETTINGS_MODULE to AfriShopping.settings, and then imports and runs the
+    execute_from_command_line function from the django.core.management module
+    """
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'AfriShopping.settings')
     try:

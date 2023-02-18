@@ -20,6 +20,12 @@ from shopping.signupform import CustomUserCreationForm
 from django.db import IntegrityError
 
 def signup(request):
+    """
+    If the form is valid, save it, otherwise, return the form with the errors
+
+    :param request: The request is an HttpRequest object
+    :return: The form is being returned.
+    """
     if request.method == 'POST':
         form = CustomUserCreationForm(request.POST)
 
