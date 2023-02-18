@@ -3,6 +3,7 @@ from django.db import models
 from shopping.category import Category
 
 """
+
 I want to create a dropdown menu that contains all the titles from the Category class
 """
 
